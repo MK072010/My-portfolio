@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mohit Prajapat — Creative Developer</title>
+  <meta name="description" content="Portfolio of Mohit Prajapat, a creative developer who turns ideas into modern web experiences.">
+  <meta name="theme-color" content="#f7f6ff">
+  <meta name="color-scheme" content="light">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mohit Prajapat — Creative Developer">
+  <meta property="og:description" content="I build digital things with intention. Concept projects, clean code and calm design.">
+  <meta property="og:site_name" content="Mohit Prajapat">
+  <!-- TODO before launch: og:image / twitter:image must be ABSOLUTE URLs (https://your-domain/assets/og-image.png) or most platforms will not show the preview. Also add <link rel="canonical"> and og:url once the domain is known. -->
+  <meta property="og:image" content="assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Mohit Prajapat, Creative Developer: portfolio preview">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Mohit Prajapat — Creative Developer">
+  <meta name="twitter:description" content="I build digital things with intention. Concept projects, clean code and calm design.">
+  <meta name="twitter:image" content="assets/og-image.png">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Mohit Prajapat","jobTitle":"Creative Developer","address":{"@type":"PostalAddress","addressLocality":"Jaipur","addressCountry":"IN"},"email":"mohitprajapat0024@gmail.com","sameAs":["https://instagram.com/coder_mohit_","https://dear-moments.in"]}</script>
+  <link rel="icon" href="assets/logo.png" type="image/png">
+  <link rel="preload" href="assets/fonts/poppins-regular.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="assets/fonts/poppins-medium.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="assets/fonts/poppins-bold.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="assets/fonts/lora-italic.woff" as="font" type="font/woff" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <div class="progress" aria-hidden="true"><span id="progress-bar"></span></div>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Mohit Prajapat, back to top">
+        <img class="brand-logo" src="assets/logo.png" alt="" width="46" height="34">
+        <span class="brand-text">
+          <span class="brand-name">Mohit Prajapat</span>
+          <span class="brand-role">Creative Developer</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-list">
+        <span class="nav-toggle-label">Menu</span>
+        <span class="nav-toggle-icon" aria-hidden="true"></span>
+      </button>
+
+      <nav class="site-nav" aria-label="Primary">
+        <ul class="nav-list" id="nav-list">
+          <li><a href="#top" class="is-current">Home</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li class="nav-cta-item"><a class="btn btn-primary btn-sm" href="#contact">Get In Touch <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+
+        <div class="hero-copy" data-reveal>
+          <p class="hello">Hello, I'm Mohit Prajapat <span aria-hidden="true">👋</span></p>
+          <h1 id="hero-title">I build digital things with <span class="accent">intention.</span><svg class="doodle-heart" viewBox="0 0 40 40" aria-hidden="true"><path pathLength="1" d="M20 33C9 25 5 19 5 13.5 5 9 8.5 6 12.5 6c3 0 5.5 1.7 7.5 5 2-3.3 4.5-5 7.5-5C31.5 6 35 9 35 13.5 35 19 31 25 20 33z"/></svg></h1>
+          <p class="hero-intro">
+            I&rsquo;m a creative developer from Jaipur. I design and build fast,
+            good-looking websites, games and apps, and I run Dear Moments, a live
+            product that turns special moments into digital memory pages.
+          </p>
+          <p class="role-line">Also: <span class="rotator" id="rotator" data-words="Problem solver,Interface tinkerer,Lifelong learner,Detail nerd">Problem solver</span></p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#work">View My Work <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <a class="btn btn-ghost" href="#contact">Contact Me</a>
+          </div>
+
+          <ul class="socials" aria-label="Social links">
+            <!-- TODO: YouTube ka link yahan daalo -->
+            <li><a href="https://instagram.com/coder_mohit_" target="_blank" rel="noopener" aria-label="Instagram (opens in a new tab)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4zm0 2a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H7zm5 2.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9zm0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zm4.8-3.3a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2z"/></svg></a></li>
+            <li><a href="#" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2C2 8.8 2 12 2 12s0 3.2.4 4.8a2.5 2.5 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8c.4-1.6.4-4.8.4-4.8s0-3.2-.4-4.8zM10 15V9l5.2 3L10 15z"/></svg></a></li>
+          </ul>
+        </div>
+
+        <div class="hero-visual" id="hero-visual" data-reveal>
+          <div class="stage">
+            <div class="float">
+              <div class="sway">
+                <div class="tilt" id="hero-tilt">
+                  <span class="glow" aria-hidden="true"></span>
+                  <span class="floor" aria-hidden="true"></span>
+                  <img class="hero-img" src="assets/hero.jpg" fetchpriority="high" decoding="async" alt="Illustration of a developer working on a laptop" width="1000" height="667">
+                  <!-- Floating 3D layers (decorative) -->
+                  <span class="obj sphere s1" aria-hidden="true"></span>
+                  <span class="obj sphere s2" aria-hidden="true"></span>
+                  <span class="obj sphere s3" aria-hidden="true"></span>
+                  <span class="obj ring3d" aria-hidden="true"></span>
+                  <span class="obj star st1" aria-hidden="true"></span>
+                  <span class="obj star st2" aria-hidden="true"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============ QUICK FACTS ============ -->
+    <section class="strip-section" aria-label="Quick facts">
+      <div class="container">
+        <ul class="strip" data-reveal>
+          <li><strong><span data-count="6">6</span></strong><span>Project types built</span></li>
+          <li><strong><span data-count="3">3</span></strong><span>Core languages</span></li>
+          <li><strong><span data-count="100">100</span>%</strong><span>Hand-coded</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <section class="marquee" aria-label="Technologies and strengths">
+      <ul class="marquee-track"><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Responsive Design</li><li>Accessibility</li><li>Performance</li><li>Typography</li><li>Motion</li><li>UI Design</li><li>Clean Code</li><li aria-hidden="true">HTML5</li><li aria-hidden="true">CSS3</li><li aria-hidden="true">JavaScript</li><li aria-hidden="true">Responsive Design</li><li aria-hidden="true">Accessibility</li><li aria-hidden="true">Performance</li><li aria-hidden="true">Typography</li><li aria-hidden="true">Motion</li><li aria-hidden="true">UI Design</li><li aria-hidden="true">Clean Code</li></ul>
+    </section>
+
+    <!-- ============ SELECTED WORK ============ -->
+    <section class="section" id="work" aria-labelledby="work-title">
+      <div class="container">
+        <div class="section-head has-sparkle" data-reveal>
+          <div>
+            <p class="pill">My Work</p>
+            <h2 id="work-title">Selected <span class="accent">Work</span></h2>
+            <p class="section-note">
+              Websites, games and apps I have designed and built, from a live product to everyday builds.
+            </p>
+          </div>
+          <button class="link-arrow" id="toggle-projects" type="button" aria-expanded="false" aria-controls="cards">View All Projects <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        </div>
+
+        <div class="filters" role="group" aria-label="Filter projects">
+          <button class="chip is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="chip" type="button" data-filter="web" aria-pressed="false">Websites</button>
+          <button class="chip" type="button" data-filter="app" aria-pressed="false">Apps</button>
+          <button class="chip" type="button" data-filter="game" aria-pressed="false">Games</button>
+        </div>
+
+        <p class="results" id="results" aria-live="polite">Showing 6 of 6 projects</p>
+
+        <div class="cards" id="cards">
+          <article class="card" data-category="web" data-reveal>
+            <div class="card-media"><img src="assets/mock-dear.webp" alt="Dear Moments website preview" width="615" height="296" loading="lazy" decoding="async"></div>
+            <div class="card-body">
+              <span class="card-num" aria-hidden="true">01</span>
+              <h3>Dear Moments</h3>
+              <p>Live website that turns proposals, weddings and birthdays into beautiful digital memory pages.</p>
+              <div class="card-foot">
+                <ul class="tags" aria-label="Technologies"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+                <button class="arrow-btn" type="button" data-open="project-1" aria-haspopup="dialog" aria-label="View details: Dear Moments"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></button>
+              </div>
+            </div>
+            <div class="project-detail" id="project-1" data-title="Dear Moments" hidden>
+              <p class="lead">Dear Moments is a live product at dear-moments.in. People pick a template for their occasion, share their story, and get a personal page on their own link.</p>
+              <p><a class="btn btn-primary btn-sm" href="https://dear-moments.in" target="_blank" rel="noopener">Visit live site<span class="sr-only"> (opens in a new tab)</span></a></p>
+              <h4>Built with</h4>
+              <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+            </div>
+          </article>
+          <article class="card" data-category="web game" data-reveal>
+            <div class="card-media"><img src="assets/mock-gaming.webp" alt="Gaming website design preview" width="615" height="296" loading="lazy" decoding="async"></div>
+            <div class="card-body">
+              <span class="card-num" aria-hidden="true">02</span>
+              <h3>Gaming Website</h3>
+              <p>Bold, high-energy website design made for a gaming brand.</p>
+              <div class="card-foot">
+                <ul class="tags" aria-label="Technologies"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+                <button class="arrow-btn" type="button" data-open="project-2" aria-haspopup="dialog" aria-label="View details: Gaming Website"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></button>
+              </div>
+            </div>
+            <div class="project-detail" id="project-2" data-title="Gaming Website" hidden>
+              <p class="lead">A gaming website design with a dark, energetic look, strong visuals and clear calls to action.</p>
+              
+              <h4>Built with</h4>
+              <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+            </div>
+          </article>
+          <article class="card" data-category="app" data-reveal>
+            <div class="card-media"><img src="assets/work-3.jpg" alt="Mobile app design preview" width="615" height="296" loading="lazy" decoding="async"></div>
+            <div class="card-body">
+              <span class="card-num" aria-hidden="true">03</span>
+              <h3>Apps</h3>
+              <p>Mobile and web apps with clean interfaces and simple navigation.</p>
+              <div class="card-foot">
+                <ul class="tags" aria-label="Technologies"><li>UI/UX</li><li>Frontend</li><li>Prototyping</li></ul>
+                <button class="arrow-btn" type="button" data-open="project-3" aria-haspopup="dialog" aria-label="View details: Apps"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></button>
+              </div>
+            </div>
+            <div class="project-detail" id="project-3" data-title="Apps" hidden>
+              <p class="lead">Apps designed around simple flows, large touch targets and a clean, consistent interface.</p>
+              
+              <h4>Built with</h4>
+              <ul class="tags"><li>UI/UX</li><li>Frontend</li><li>Prototyping</li></ul>
+            </div>
+          </article>
+          <article class="card" data-category="game" data-reveal>
+            <div class="card-media"><img src="assets/mock-games.webp" alt="Browser game preview" width="615" height="296" loading="lazy" decoding="async"></div>
+            <div class="card-body">
+              <span class="card-num" aria-hidden="true">04</span>
+              <h3>Games</h3>
+              <p>Browser games built from scratch with plain JavaScript.</p>
+              <div class="card-foot">
+                <ul class="tags" aria-label="Technologies"><li>HTML</li><li>Canvas</li><li>JavaScript</li></ul>
+                <button class="arrow-btn" type="button" data-open="project-4" aria-haspopup="dialog" aria-label="View details: Games"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></button>
+              </div>
+            </div>
+            <div class="project-detail" id="project-4" data-title="Games" hidden>
+              <p class="lead">Games made for the browser, focused on smooth controls, quick load times and fun gameplay.</p>
+              
+              <h4>Built with</h4>
+              <ul class="tags"><li>HTML</li><li>Canvas</li><li>JavaScript</li></ul>
+            </div>
+          </article>
+          <article class="card" data-category="web" data-reveal>
+            <div class="card-media"><img src="assets/mock-shop.webp" alt="E-commerce website preview" width="615" height="296" loading="lazy" decoding="async"></div>
+            <div class="card-body">
+              <span class="card-num" aria-hidden="true">05</span>
+              <h3>E-commerce Website</h3>
+              <p>Online store with a product grid, product pages and a smooth checkout flow.</p>
+              <div class="card-foot">
+                <ul class="tags" aria-label="Technologies"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+                <button class="arrow-btn" type="button" data-open="project-5" aria-haspopup="dialog" aria-label="View details: E-commerce Website"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></button>
+              </div>
+            </div>
+            <div class="project-detail" id="project-5" data-title="E-commerce Website" hidden>
+              <p class="lead">An e-commerce website with a clean product catalogue, easy browsing and a simple checkout.</p>
+              
+              <h4>Built with</h4>
+              <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+            </div>
+          </article>
+          <article class="card" data-category="web app" data-reveal>
+            <div class="card-media"><img src="assets/mock-school.webp" alt="School and college website and app preview" width="615" height="296" loading="lazy" decoding="async"></div>
+            <div class="card-body">
+              <span class="card-num" aria-hidden="true">06</span>
+              <h3>School &amp; College Website and App</h3>
+              <p>Websites and apps for schools and colleges, for students, parents and staff.</p>
+              <div class="card-foot">
+                <ul class="tags" aria-label="Technologies"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+                <button class="arrow-btn" type="button" data-open="project-6" aria-haspopup="dialog" aria-label="View details: School &amp; College Website and App"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></button>
+              </div>
+            </div>
+            <div class="project-detail" id="project-6" data-title="School &amp; College Website and App" hidden>
+              <p class="lead">A school and college website and app that keeps information, notices and navigation easy to find for everyone.</p>
+              
+              <h4>Built with</h4>
+              <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FEATURED CONCEPT ============ -->
+    <section class="section" id="featured" aria-labelledby="featured-title">
+      <div class="container feature-grid">
+        <div class="feature-media" data-reveal>
+          <img src="assets/mock-dear.webp" alt="Dear Moments website preview" width="615" height="296" loading="lazy" decoding="async">
+          <span class="feature-badge">Live project</span>
+        </div>
+        <div class="feature-copy" data-reveal>
+          <p class="pill">Featured</p>
+          <h2 id="featured-title">Dear <span class="accent">Moments</span></h2>
+          <ul class="meta-chips" aria-label="Project facts">
+            <li><span>Type</span> Live website</li>
+            <li><span>Focus</span> Design + front-end</li>
+            <li><span>Stack</span> HTML · CSS · JS</li>
+            <!-- VERIFY: "4,200+ stories · 4.9★" is a numeric claim I could not verify from the project files. Keep only if it is accurate and current. -->
+            <li><span>Reach</span> 4,200+ stories · 4.9★</li>
+          </ul>
+          <ol class="feature-points">
+            <li><strong>The goal</strong><span>Let anyone turn a special moment into a beautiful page, live in 24 to 48 hours.</span></li>
+            <li><strong>The approach</strong><span>Romantic, warm templates for proposals, weddings and birthdays, easy to browse on any phone.</span></li>
+            <li><strong>What I learned</strong><span>A real product needs clear pricing, fast loading and simple ordering more than heavy effects.</span></li>
+          </ol>
+          <a class="btn btn-primary" href="#work" data-open-project="project-1">See project details <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section section-tint" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <div>
+            <p class="pill">Skills</p>
+            <h2 id="skills-title">A focused <span class="accent">toolkit</span></h2>
+            <p class="section-note">A small set of tools, used well.</p>
+          </div>
+        </div>
+        <div class="skill-grid">
+          <article class="skill" data-reveal>
+            <span class="icon-bubble" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg></span>
+            <h3>Front-end</h3>
+            <p>Semantic markup, modern layout and clean, readable scripting.</p>
+            <ul class="tags"><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Flexbox &amp; Grid</li></ul>
+          </article>
+          <article class="skill" data-reveal>
+            <span class="icon-bubble" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 0 18c1.5 0 2-1 2-2s-.5-1.7 0-2.5c.6-1 2-1 3-1h1a3 3 0 0 0 3-3c0-5-4-9.5-9-9.5zM7.500 11.500h.01M10 7.500h.01M15 8h.01"/></svg></span>
+            <h3>Design sense</h3>
+            <p>Interfaces that feel calm, balanced and intentional.</p>
+            <ul class="tags"><li>Typography</li><li>Spacing</li><li>Colour</li><li>Motion</li></ul>
+          </article>
+          <article class="skill" data-reveal>
+            <span class="icon-bubble" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.500-1-8-4-8-9V6l8-3zM8.500 12l2.5 2.5 4.500-5"/></svg></span>
+            <h3>Quality</h3>
+            <p>Sites that work for everyone, on every screen.</p>
+            <ul class="tags"><li>Responsive</li><li>Accessibility</li><li>Performance</li><li>SEO basics</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="section" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <div>
+            <p class="pill">Services</p>
+            <h2 id="services-title">How I can <span class="accent">help</span></h2>
+            <p class="section-note">Focused help for people and small teams who want a polished web presence.</p>
+          </div>
+        </div>
+        <div class="service-grid">
+          <article class="service" data-reveal>
+            <span class="icon-bubble" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 5h18v14H3zM3 9h18M7 7h.01M10 7h.01"/></svg></span>
+            <h3>Landing pages &amp; portfolios</h3>
+            <p>Fast, elegant single-page sites that present you or your product with clarity.</p>
+          </article>
+          <article class="service" data-reveal>
+            <span class="icon-bubble" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 4h16v12H4zM9 20h6M12 16v4"/></svg></span>
+            <h3>Interface development</h3>
+            <p>Turning designs into pixel-careful, responsive and accessible front-end code.</p>
+          </article>
+          <article class="service" data-reveal>
+            <span class="icon-bubble" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3c0 5 4 9 9 9-5 0-9 4-9 9 0-5-4-9-9-9 5 0 9-4 9-9z"/></svg></span>
+            <h3>Interaction &amp; motion polish</h3>
+            <p>Subtle hover states, reveals and 3D touches that add depth without noise.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROCESS ============ -->
+    <section class="section section-tint" id="process" aria-labelledby="process-title">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <div>
+            <p class="pill">Process</p>
+            <h2 id="process-title">Simple, clear, <span class="accent">no surprises</span></h2>
+          </div>
+        </div>
+        <ol class="steps">
+          <li class="step" data-reveal><span class="step-num" aria-hidden="true">1</span><h3>Understand</h3><p>We talk goals, audience and what success looks like.</p></li>
+          <li class="step" data-reveal><span class="step-num" aria-hidden="true">2</span><h3>Design</h3><p>Structure, type and layout are shaped before any code.</p></li>
+          <li class="step" data-reveal><span class="step-num" aria-hidden="true">3</span><h3>Build</h3><p>Clean HTML, CSS and JavaScript, tested on real devices.</p></li>
+          <li class="step" data-reveal><span class="step-num" aria-hidden="true">4</span><h3>Refine</h3><p>Details, speed and accessibility get a final careful pass.</p></li>
+        </ol>
+      </div>
+    </section>
+
+
+    <!-- ============ THEME PICKER (needs JavaScript) ============ -->
+
+    <!-- ============ FAQ ============ -->
+    <section class="section" id="faq" aria-labelledby="faq-title">
+      <div class="container faq-wrap">
+        <div class="section-head" data-reveal>
+          <div>
+            <p class="pill">FAQ</p>
+            <h2 id="faq-title">Good to <span class="accent">know</span></h2>
+          </div>
+        </div>
+        <div class="faq" data-reveal>
+          <details><summary>What do you work with?</summary><p>Plain HTML, CSS and JavaScript, with no heavy frameworks unless a project truly needs them.</p></details>
+          <details><summary>Can I see a live project?</summary><p>Yes. Dear Moments (dear-moments.in) is live, and the work section shows other websites, games and apps I have built.</p></details>
+          <details><summary>Will my site work on mobile?</summary><p>Yes. Everything is built mobile-first and checked on small screens.</p></details>
+          <details><summary>How do we start?</summary><p>Send a short message with your idea and timeline, and I'll reply with questions and next steps.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT + CONTACT ============ -->
+    <section class="section duo" aria-label="About and contact">
+      <div class="container duo-grid">
+
+        <div class="about has-sparkle" id="about" data-reveal>
+          <p class="pill">About Me</p>
+          <h2>More About <span class="accent">Me</span></h2>
+          <p class="muted">I'm Mohit, a creative developer from Jaipur. I design and build websites, games and apps, and I run Dear Moments, a live site that turns special moments into digital memory pages. I enjoy solving problems and turning ideas into things people actually use.</p>
+          <ul class="traits">
+            <li>
+              <svg class="ico-lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+              <strong>Clean Code</strong><span>Maintainable &amp; Scalable</span>
+            </li>
+            <li>
+              <svg class="ico-lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-4 10.500c.6.6 1 1.400 1 2.500h6c0-1.100.4-1.900 1-2.500A6 6 0 0 0 12 3z"/></svg>
+              <strong>Creative Mind</strong><span>Ideas to Reality</span>
+            </li>
+            <li>
+              <svg class="ico-lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V9M10 19V5M16 19v-7M22 19H2"/></svg>
+              <strong>Continuous Learning</strong><span>Always Improving</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="about-visual" data-reveal>
+          <img src="assets/about.jpg" alt="Glossy glass sphere on a pedestal" width="586" height="408" loading="lazy" decoding="async">
+        </div>
+
+        <div class="contact" id="contact" data-reveal>
+          <p class="pill pill-plain">Get In Touch</p>
+          <h2>Let's Work <span class="accent">Together</span></h2>
+          <p class="muted">Have a project in mind? Feel free to reach out. I'd love to hear from you.</p>
+
+          <ul class="contact-list">
+            <!-- REPLACE the email in the href AND the visible text -->
+            <li>
+              <svg class="ico-md" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4zM4 7l8 6 8-6"/></svg>
+              <a href="mailto:mohitprajapat0024@gmail.com">mohitprajapat0024@gmail.com</a>
+            </li>
+            <li>
+              <svg class="ico-md" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21l1.6-5A8.5 8.5 0 1 1 8 19.4L3 21zM9 8c0 4 3 7 7 7l1-2-2-1-1 1c-1-.4-2.600-2-3-3l1-1-1-2-2 1z"/></svg>
+              <a href="https://wa.me/919694801604?text=Hi%20Mohit%2C%20I%20saw%20your%20portfolio." target="_blank" rel="noopener">Chat on WhatsApp<span class="sr-only"> (opens in a new tab)</span></a>
+            </li>
+            <li>
+              <svg class="ico-md" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6 7-11a7 7 0 1 0-14 0c0 5 7 11 7 11zM12 12.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/></svg>
+              <span>Jaipur, Rajasthan, India</span>
+            </li>
+            <li class="contact-last">
+              <svg class="ico-md" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 3L3 11l7 3 3 7 8-18zM10 14l11-11"/></svg>
+              <span>Let's Connect</span>
+              <a class="btn btn-primary btn-sm" href="#message">Send Message <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============ START A PROJECT (contact form) ============ -->
+    <section class="section section-tint" id="message" aria-labelledby="message-title">
+      <div class="container form-wrap">
+        <div class="section-head" data-reveal>
+          <div>
+            <p class="pill">Say Hello</p>
+            <h2 id="message-title">Start a <span class="accent">conversation</span></h2>
+            <p class="section-note">Tell me a little about your idea. Sending opens your email app with the message ready to go.</p>
+          </div>
+        </div>
+
+        <!-- REPLACE the email in data-email AND action (both) -->
+        <form class="form" id="contact-form" data-email="mohitprajapat0024@gmail.com" action="mailto:mohitprajapat0024@gmail.com" method="post" enctype="text/plain" data-reveal>
+          <div class="field">
+            <label for="f-name">Your name</label>
+            <input id="f-name" name="name" type="text" autocomplete="name" required aria-describedby="err-name">
+            <p class="field-error" id="err-name" hidden></p>
+          </div>
+          <div class="field">
+            <label for="f-email">Your email</label>
+            <input id="f-email" name="email" type="email" autocomplete="email" inputmode="email" required aria-describedby="err-email">
+            <p class="field-error" id="err-email" hidden></p>
+          </div>
+          <div class="field field-wide">
+            <label for="f-type">Project type</label>
+            <select id="f-type" name="type">
+              <option>Landing page or portfolio</option>
+              <option>Interface development</option>
+              <option>Interaction and motion polish</option>
+              <option>Something else</option>
+            </select>
+          </div>
+          <div class="field field-wide">
+            <label for="f-msg">Message</label>
+            <textarea id="f-msg" name="message" rows="5" required aria-describedby="err-msg"></textarea>
+            <p class="field-error" id="err-msg" hidden></p>
+          </div>
+          <div class="field-wide form-actions">
+            <button class="btn btn-primary" type="submit">Send message <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="theme-bar" id="theme" aria-label="Accent colour" hidden>
+      <div class="container theme-row">
+        <p class="theme-name" id="theme-name" aria-live="polite">Theme: Lavender</p>
+        <div class="swatches" role="group" aria-label="Accent colour">
+          <button class="swatch" type="button" data-theme="lavender" aria-pressed="true" aria-label="Lavender"></button>
+          <button class="swatch" type="button" data-theme="ocean" aria-pressed="false" aria-label="Ocean blue"></button>
+          <button class="swatch" type="button" data-theme="mint" aria-pressed="false" aria-label="Mint teal"></button>
+          <button class="swatch" type="button" data-theme="rose" aria-pressed="false" aria-label="Rose pink"></button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+    <!-- ============ PROJECT DETAILS (opens from the arrow buttons) ============ -->
+  <dialog class="modal" id="project-modal" aria-labelledby="modal-title">
+    <div class="modal-inner">
+      <button class="modal-close" type="button" data-close aria-label="Close details">
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+      <div class="modal-media" id="modal-media"></div>
+      <div class="modal-body">
+        <p class="pill">Project</p>
+        <h3 id="modal-title"></h3>
+        <div id="modal-content"></div>
+      </div>
+    </div>
+  </dialog>
+
+  <a class="to-top" id="to-top" href="#top" aria-label="Back to top"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg></a>
+
+<!-- ============ FOOTER ============ -->
+  <footer class="site-footer footer-slim">
+    <div class="container fs-inner">
+      <a class="fs-brand" href="#top"><img src="assets/logo.png" alt="" width="34" height="25"><span><strong>Mohit Prajapat</strong><small>Creative Developer · Jaipur</small></span></a>
+      <nav class="fs-links" aria-label="Footer">
+        <a href="#work">Work</a><a href="#skills">Skills</a><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a>
+      </nav>
+      <ul class="fs-social" aria-label="Social links">
+        <li><a href="mailto:mohitprajapat0024@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4zM4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="2"/></svg></a></li>
+        <li><a href="https://instagram.com/coder_mohit_" target="_blank" rel="noopener" aria-label="Instagram (opens in a new tab)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4zm0 2a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H7zm5 2.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9zm0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5z"/></svg></a></li>
+        <!-- TODO: YouTube ka link yahan daalo -->
+        <li><a href="#" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2C2 8.8 2 12 2 12s0 3.2.4 4.8a2.5 2.5 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8c.4-1.6.4-4.8.4-4.8s0-3.2-.4-4.8zM10 15V9l5.2 3L10 15z"/></svg></a></li>
+      </ul>
+    </div>
+    <div class="container fs-bar">
+      <p>&copy; <span id="year">2026</span> Mohit Prajapat. All rights reserved.</p>
+      <a href="#top">Back to top &uarr;</a>
+    </div>
+  </footer>
+
+</body>
+</html>
